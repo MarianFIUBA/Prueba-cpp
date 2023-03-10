@@ -11,8 +11,6 @@ typedef struct mapa{
 }mapa_t;
 
 
-// Pre:
-// Post:
 void cargar_coordenadas (mapa_t *lugar){
     for (int i = 0; i < MAX; i++){
         lugar->coordenada_x[i] = rand()%MAX;
@@ -21,8 +19,6 @@ void cargar_coordenadas (mapa_t *lugar){
 }
 
 
-// Pre:
-// Post:
 void imprimir_coordenadas (mapa_t lugar){
     for (int i = 0; i < MAX; i++){
         cout << "Punto " << i << ": (" << lugar.coordenada_x[i] << ", ";
